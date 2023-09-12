@@ -1080,7 +1080,8 @@ function _Chat() {
               }}
             />
           </div> */}
-          {showMaxIcon && (
+          {/* {showMaxIcon && ( */}
+          {!isMobileScreen && (
             <div className="window-action-button">
               <IconButton
                 icon={config.tightBorder ? <MinIcon /> : <MaxIcon />}
@@ -1093,6 +1094,7 @@ function _Chat() {
               />
             </div>
           )}
+          {/* )} */}
         </div>
         {/* 
         <PromptToast
