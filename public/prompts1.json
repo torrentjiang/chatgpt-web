@@ -1,0 +1,44 @@
+{
+    "cn": [
+      [
+        "测试",
+        "进入测试场景"
+      ],
+      [
+        "测试自动补全",
+        "自动补全"
+      ],
+      [
+        "表格",
+        "我想让你帮我绘制一个今天上午，下午，晚上天气的表格"
+      ],
+      [
+        "图表",
+        "我想让你帮我绘制一个今天不同时段温度的折线图"
+      ],
+      [
+        "代码",
+        "我想让你帮我写一个防抖函数"
+      ],
+      [
+        "充当 Linux 终端",
+        "我想让你充当 Linux 终端。我将输入命令，您将回复终端应显示的内容。我希望您只在一个唯一的代码块内回复终端输出，而不是其他任何内容。我的第一个命令是 pwd\n"
+      ]
+    ],
+    "en": [
+      [
+        "help",
+        "获取关于可用预设命令的帮助信息"
+      ],
+      [
+        "test",
+        "start test"
+      ],
+      [
+        "Linux Terminal",
+        "I want you to act as a linux terminal. I will type commands and you will reply with what the terminal should show. my first command is pwd"
+      ]
+    ]
+  }
+  
+  

@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "targets": {
+            "browsers": ["> 0.25%, not dead"]
+          }
+        }
+      }
+    ],
+    "@babel/preset-env", "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+        "import", 
+        { 
+            "libraryName": "antd", 
+            "style": true
+        }
+    ]
+]
+}

@@ -1,0 +1,118 @@
+/* 模态框覆盖整个视口 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* 将模态框放在最上层 */
+  }
+  
+  /* 实际模态框内容 */
+  .modal-Inner {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* 最大宽度为80% */
+    min-width: 40%;
+    // width: 400px;
+  }
+  
+  /* 模态框标题栏 */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    /* 按钮 */
+    // button {
+    //     padding: 10px 20px;
+    //     background-color: #000;
+    //     color: #fff;
+    //     border: none;
+    //     cursor: pointer;
+    //     border-radius: 5px;
+    //     font-size: 1rem;
+    // }
+  }
+  
+  /* 模态框标题 */
+  .modal-title {
+    font-size: 1.2rem;
+  }
+  
+  /* 模态框关闭按钮 */
+  .modal-close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #aaa;
+  }
+  
+  /* 模态框内容区域 */
+  .modal-content {
+    padding: 20px;
+    height: 680px;
+    overflow: scroll;
+  }
+  
+  .view {
+    // background:#444;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    // padding: 50px 0;
+    overflow: auto;
+  }
+  .pageContainer {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    width:max-content;
+    max-width:100%;
+    :global {
+      .react-pdf__Document {
+        .react-pdf__Page {
+          .textLayer, .annotationLayer {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .pageTool{
+    position: absolute;
+    bottom: 20px;
+    background: #fff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    svg {
+      cursor: pointer;
+    }
+    i {
+      padding: 5px;
+      margin:0 5px;
+      &:hover{
+        background: #333;
+      }
+    }
+    input {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      margin-right: 10px;
+      height: 24px;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    input[type="number"]{
+      -moz-appearance: textfield;
+    }
+  }
